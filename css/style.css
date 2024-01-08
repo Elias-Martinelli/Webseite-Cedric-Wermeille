@@ -247,7 +247,7 @@ section {
 /* --- HOME SECTION --- */
 /* -------------------- */
 
-#home {
+#start {
   display: flex;
   justify-content: center;
   gap: 5rem;
