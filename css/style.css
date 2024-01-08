@@ -188,7 +188,7 @@ a:hover {
 /* --- SECTIONS GENERAL --- */
 /* ------------------------ */
 
-section {
+.section-styling {
   padding-top: 4vh;
   height: 120vh;
   margin: 0 10rem;
@@ -249,15 +249,15 @@ section {
 /* -------------------- */
 
 #home {
+  background-color: rgba(0, 0, 0, 0.2 );
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
   display: flex;
   justify-content: center;
-  gap: 5rem;
-  height: auto;
-  background-size: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: auto;
-  transition: background-image 1s ease-in-out;
+  align-items: center;
+  text-align: center;
+  color: #fff;
 }
 
 .section__pic-container {
@@ -521,7 +521,7 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 130vh;
+  height: auto;
 }
 
 #impressum p {

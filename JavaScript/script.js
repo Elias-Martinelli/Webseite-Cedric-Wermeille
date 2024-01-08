@@ -59,8 +59,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-// changeing home Background 
-
 document.addEventListener('DOMContentLoaded', function() {
     const backgrounds = [
         'url(assets/pictures/background_1.jpeg)',
@@ -72,6 +70,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     setInterval(function() {
         currentBackground = (currentBackground + 1) % backgrounds.length;
-        document.getElementById('home').style.backgroundImage = backgrounds[currentBackground];
+
+        const homeElement = document.getElementById('home');
+        homeElement.style.backgroundImage = backgrounds[currentBackground];
+
+        // Set a black background with opacity (50%)
+        homeElement.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
     }, 5000);
 });
